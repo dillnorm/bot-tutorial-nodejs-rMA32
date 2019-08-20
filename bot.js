@@ -20,6 +20,18 @@ function respond() {
                 "MIA","BUF","SF","WAS","NYJ","TB"]
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
+    var i = 1;                     //  set your counter to 1
+
+    function myLoop () {           //  create a loop function
+      setTimeout(function () {    //  call a 3s setTimeout when the loop is called
+        console.log("don't care");          //  your code here
+         i++;                     //  increment the counter
+         if (i < 10) {            //  if the counter < 10, call the loop function
+         myLoop();             //  ..  again which will trigger another 
+        }                        //  ..  setTimeout()
+      }, 3000)
+    }
+    myLoop();
     postMessage(cool());
     this.res.end();
   }

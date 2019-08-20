@@ -42,7 +42,7 @@ function respond() {
   } 
   else if(request.text && botRegexSup.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("Sup");
+    postMessage("Wassup");
     this.res.end();
   } 
   else if(request.text && botRegexProp.test(request.text)) {

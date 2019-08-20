@@ -44,7 +44,7 @@ function respond() {
              postMessage("Prepare your anus, counting to 50");
         }
         else{
-          postMessage(i);
+          postMessage(i.toString());
         }
         i++;
         if( i < howManyTimes ){

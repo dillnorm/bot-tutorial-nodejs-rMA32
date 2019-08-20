@@ -9,7 +9,7 @@ function respond() {
       botRegexAd=/^\/advance/;botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
       botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; botRegexSup = /^\Sup/;
-      botRegexSlut = /^\/slut/; botRegexMason = /^\/mason/;
+      botRegexCount = /^\Count/; botRegexMason = /^\/mason/;
       botRegexProp = /^\/prop/;botRegexKys = /^\/kys/; botRegexSlam = /^\/slam/; botRegexBrye = /^\/brye/;
       botRegexGian = /^\/gian/; botRegexScrotes = /^\/scrotes/; botRegexShaki = /^\/shaki/;
       botRegexDaf = /^\/dafuq/; botRegexMA32 = /^\/pending/; botRegexTrade = /^\/trade/;
@@ -35,9 +35,24 @@ function respond() {
     myLoop();
     this.res.end();
   }
-  else if(request.text && botRegexSlut.test(request.text)) {
+  else if(request.text && botRegexCount.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/640x364.jpeg.f8a0e216bf7e42ed9a86b3ae23cc2ff1.large");
+    
+      var i = 0, howManyTimes = 10;
+      function f() {
+        if(i == 0){
+             postMessage("Prepare your anus, counting to 50");
+        }
+        else{
+          postMessage(i);
+        }
+        i++;
+        if( i < howManyTimes ){
+          setTimeout( f, 3000 );
+        }
+      }
+    f();
+    
     this.res.end();
   } 
   else if(request.text && botRegexSup.test(request.text)) {

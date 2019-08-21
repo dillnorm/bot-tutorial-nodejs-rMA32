@@ -4,9 +4,9 @@ var botID = process.env.BOT_ID;
 
 
 function retest() {
-
+    res.writeHead(200);
     postMessage("Wassup test");
-
+    res.end();
   };
 retest();
 

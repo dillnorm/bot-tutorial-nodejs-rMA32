@@ -8,7 +8,7 @@ function retest() {
     postMessage("Wassup test");
 
   };
-
+retest();
 
 function postMessage(response) {
   var botResponse,options, body, botReq;

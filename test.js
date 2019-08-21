@@ -2,12 +2,12 @@ var HTTPS = require('https');
 
 var botID = process.env.BOT_ID;
 
-function() {
+function retest() {
     this.res.writeHead(200);
     postMessage("Wassup test");
     this.res.end();
   };
-function();
+retest();
 
 function postMessage(response) {
   var botResponse,options, body, botReq;

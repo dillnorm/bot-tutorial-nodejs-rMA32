@@ -50,4 +50,3 @@ function getRandomInt(min, max) {
 }
 
 
-exports.respond = respond;

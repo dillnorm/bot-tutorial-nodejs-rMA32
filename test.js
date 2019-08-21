@@ -8,7 +8,7 @@ function retest() {
     postMessage("Wassup test");
 
   };
-retest();
+
 
 function postMessage(response) {
   var botResponse,options, body, botReq;
@@ -49,4 +49,4 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
-
+exports.retest = retest;

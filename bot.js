@@ -8,6 +8,8 @@ function respond() {
  
   var botRegex = /^\/cool guy/;
   
+  var txt = request.txt;
+  
   
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
@@ -17,7 +19,7 @@ function respond() {
   
   
  
-  if(request.text.includes("@Gus")) {
+  if(txt.includes("@Gus")) {
     console.log("care");
   }
    /*                    

@@ -14,9 +14,9 @@ function respond() {
     postMessage(cool());
     this.res.end();
   }
-  /*var text = request.JSON.Stringify(request);
+  var text = request.JSON.Stringify(request);
   
-  
+  /*
   if(text.includes("@Gus")) {
                       
      if((text.includes("PT")||request.includes("pt"))||((request.includes("pT")||request.includes("Pt"))){

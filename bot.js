@@ -6,7 +6,7 @@ var botID = process.env.BOT_ID;
 function respond() {
   var request = JSON.parse(this.req.chunks[0]);
  
-  
+  var botRegex = /^\/cool guy/;
   
   
   if(request.text && botRegex.test(request.text)) {
@@ -50,14 +50,14 @@ function respond() {
 //      }, 3000)
 //    }
 //    myLoop();
-  }
+  }*/
   else {
     console.log("don't care");
     this.res.writeHead(200);
     this.res.end();
   }
 }
-*/
+
 function postMessage(response) {
   var botResponse,options, body, botReq;
 

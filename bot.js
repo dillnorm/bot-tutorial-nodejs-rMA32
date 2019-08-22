@@ -10,7 +10,7 @@ function respond() {
   
   if(text.includes("@Gus")) {
                       
-     if((text.includes("PT")||request.includes("pt"))||(request.includes("pT")||request.includes("Pt"))){
+     if((text.includes("PT")||request.includes("pt"))||((request.includes("pT")||request.includes("Pt"))){
       this.res.writeHead(200);
         console.log("Posting PT Plan");
         postMessage("PT Plan:\n\

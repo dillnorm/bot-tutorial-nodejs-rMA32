@@ -6,9 +6,9 @@ var botID = process.env.BOT_ID;
 function respond() {
   var request = JSON.parse(this.req.chunks[0]);
  
-  var botRegex = /^\/cool guy/;
+  var botRegex = /^\@Gus/;
   
-  var txt = request.txt;
+  //var txt = request.txt;
   
   
   if(request.text && botRegex.test(request.text)) {
@@ -19,9 +19,9 @@ function respond() {
   
   
  
-  if(txt.includes("@Gus")) {
-    console.log("care");
-  }
+ // if(txt.includes("@Gus")) {
+//    console.log("care");
+//  }
    /*                    
      if((text.includes("PT")||request.includes("pt"))||((request.includes("pT")||request.includes("Pt"))){
       this.res.writeHead(200);

@@ -2,18 +2,8 @@ var HTTPS = require('https');
 
 var botID = process.env.BOT_ID;
 
-
-function retest() {
-    res.writeHead(200);
-    postMessage("Wassup test");
-    res.end();
-  };
-retest();
-
-function postMessage(response) {
+function postMessage() {
   var botResponse,options, body, botReq;
-
-  botResponse = response
 
   options = {
     hostname: 'api.groupme.com',
@@ -23,7 +13,7 @@ function postMessage(response) {
 
   body = {
     "bot_id" : botID,
-    "text" : botResponse
+    "text test" : botResponse
   };
 
   console.log('sending ' + botResponse + ' to ' + botID);
@@ -45,8 +35,4 @@ function postMessage(response) {
   botReq.end(JSON.stringify(body));
 }
 
-function getRandomInt(min, max) {
-  return Math.floor(Math.random() * (max - min)) + min;
-}
-
-exports.retest = retest;
+postMessage();

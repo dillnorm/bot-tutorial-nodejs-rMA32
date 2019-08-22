@@ -5,6 +5,15 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]);
+ 
+  
+  
+  
+  if(request.text && botRegex.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage(cool());
+    this.res.end();
+  }
   /*var text = request.JSON.Stringify(request);
   
   

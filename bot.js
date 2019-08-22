@@ -5,8 +5,8 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\@Gus/;
-  if("@Gus") {
+  
+  if(request.includes("@Gus")) {
                       
      if((request.includes("PT")||request.includes("pt"))||(request.includes("pT")||request.includes("Pt"))){
       this.res.writeHead(200);

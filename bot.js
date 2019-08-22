@@ -5,7 +5,7 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]);
-  var text = request.JSON.Stringify(request);
+  /*var text = request.JSON.Stringify(request);
   
   
   if(text.includes("@Gus")) {
@@ -48,7 +48,7 @@ function respond() {
     this.res.end();
   }
 }
-
+*/
 function postMessage(response) {
   var botResponse,options, body, botReq;
 

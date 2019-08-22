@@ -6,7 +6,7 @@ var botID = process.env.BOT_ID;
 function respond() {
   var request = JSON.parse(this.req.chunks[0]);
  
-  var botRegex = /^\@Gus/;
+  var botRegex = /^\ @Gus/;
   
   //var txt = request.txt;
   

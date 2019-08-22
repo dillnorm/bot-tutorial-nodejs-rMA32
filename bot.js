@@ -5,17 +5,19 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]);
+  var text = request.JSON.Stringify(request);
   
-  if(request.includes("@Gus")) {
+  
+  if(text.includes("@Gus")) {
                       
-     if((request.includes("PT")||request.includes("pt"))||(request.includes("pT")||request.includes("Pt"))){
+     if((text.includes("PT")||request.includes("pt"))||(request.includes("pT")||request.includes("Pt"))){
       this.res.writeHead(200);
         console.log("Posting PT Plan");
         postMessage("PT Plan:\n\
                      Formation 0620");
       this.res.end();  
      }
-     else if(request.includes("Hey"){
+     else if(text.includes("Hey"){
       this.res.writeHead(200);
         postMessage("Wassup");
       this.res.end();  

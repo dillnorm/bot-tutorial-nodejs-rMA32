@@ -14,11 +14,13 @@ function respond() {
     postMessage(cool());
     this.res.end();
   }
-  var text = request.JSON.Stringify(request);
   
-  /*
-  if(text.includes("@Gus")) {
-                      
+  
+ 
+  if(request.text.includes("@Gus")) {
+    console.log("care");
+  }
+   /*                    
      if((text.includes("PT")||request.includes("pt"))||((request.includes("pT")||request.includes("Pt"))){
       this.res.writeHead(200);
         console.log("Posting PT Plan");
@@ -50,6 +52,7 @@ function respond() {
 //      }, 3000)
 //    }
 //    myLoop();
+
   }*/
   else {
     console.log("don't care");

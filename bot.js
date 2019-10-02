@@ -8,7 +8,7 @@ function respond() {
  
   var botRegex = /^\/cool guy/;
   
-  var txt = request;
+  var txt = JSON.stringify(request);
   
   
   if(request.text && botRegex.test(request.text)) {

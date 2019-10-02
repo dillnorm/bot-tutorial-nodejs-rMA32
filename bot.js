@@ -6,9 +6,37 @@ var botID = process.env.BOT_ID;
 function respond() {
   var request = JSON.parse(this.req.chunks[0]);
  
+  var Regexp = /^\@Gus/;
+  var Regexp2 = /^\PT/;
+  var Regexp3 = /^\Hey/;
+  
   var botRegex = /^\/cool guy/;
   
-  var txt = JSON.stringify(request.text);
+  if(request.text && Regexp.test(request.text)) {
+     if(request.text && Regexp2.test(request.text)){
+      this.res.writeHead(200);
+        console.log("Posting PT Plan");
+        postMessage("PT Plan:\n\
+                     Formation 0620");
+      this.res.end();  
+     }
+     else if(request.text && Regexp3.test(request.text)){
+      this.res.writeHead(200);
+        postMessage("Wassup");
+      this.res.end();  
+     }
+    else{
+      this.res.writeHead(200);
+      postMessage("What?");
+      this.res.end();
+    }
+  }
+  if(request.text && botRegex.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage(cool());
+    this.res.end();
+  }
+  /*var txt = JSON.stringify(request.text);
   var str = "@Gus";
   
   if(request.text && botRegex.test(request.text)) {
@@ -24,6 +52,7 @@ function respond() {
   if(txt == txt2) {
    console.log("care");
   }
+  */
    /*                    
      if((text.includes("PT")||request.includes("pt"))||((request.includes("pT")||request.includes("Pt"))){
       this.res.writeHead(200);

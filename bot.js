@@ -17,7 +17,7 @@ function respond() {
     this.res.end();
   }
   
-  
+  console.log("Comparing"+ txt +" and " + txt2);
  
   if(txt == txt2) {
    console.log("care");

@@ -8,15 +8,15 @@ function respond() {
  
   var botRegex = /^\/cool guy/;
   
-  var txt = JSON.stringify(request.text);
-  var txt2 = "@Gus";
+  str txt = JSON.stringify(request.text);
+  str txt2 = "@Gus";
   
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
     postMessage(cool());
     this.res.end();
   }
-  if(txt2.includes("G")) {
+  if(txt.indexOf("@Gus") != -1) {
    console.log("care txt2");
   }
   console.log("Comparing"+ txt +" and " + txt2);

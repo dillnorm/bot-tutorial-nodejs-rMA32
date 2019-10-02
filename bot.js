@@ -9,7 +9,7 @@ function respond() {
   var botRegex = /^\/cool guy/;
   
   var txt = JSON.stringify(request.text);
-  
+  var txt = String(txt);
   
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);

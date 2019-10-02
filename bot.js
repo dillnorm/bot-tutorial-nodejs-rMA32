@@ -16,7 +16,9 @@ function respond() {
     postMessage(cool());
     this.res.end();
   }
-  
+  if(txt2.includes("G")) {
+   console.log("care txt2");
+  }
   console.log("Comparing"+ txt +" and " + txt2);
  
   if(txt == txt2) {

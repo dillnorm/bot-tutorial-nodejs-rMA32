@@ -8,18 +8,18 @@ function respond() {
  
   var botRegex = /^\/cool guy/;
   
-  str txt = JSON.stringify(request.text);
-  str txt2 = "@Gus";
+  var txt = JSON.stringify(request.text);
+  var str = "@Gus";
   
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
     postMessage(cool());
     this.res.end();
   }
-  if(txt.indexOf("@Gus") != -1) {
+  if(str.search("@Gus") != -1) {
    console.log("care txt2");
   }
-  console.log("Comparing"+ txt +" and " + txt2);
+  console.log("Comparing"+ txt +" and " + str);
  
   if(txt == txt2) {
    console.log("care");

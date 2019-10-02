@@ -9,7 +9,7 @@ function respond() {
   var botRegex = /^\/cool guy/;
   
   var txt = JSON.stringify(request.text);
-  var txt = String(txt);
+  var txt2 = "@Gus";
   
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
@@ -19,7 +19,7 @@ function respond() {
   
   
  
-  if(txt.includes("@Gus")) {
+  if(txt == txt2) {
    console.log("care");
   }
    /*                    

@@ -34,8 +34,7 @@ function respond() {
       this.res.end();  
     }
     else if(Regexp5.test(request.text)){
-      var sec = "MS4 Ruck March Groups \n\nHHC Section 1:\nKnauss\nPope\nLoftis\nPrescott, O.\nCamacho\nKim\nChurchwell\nDaniels\nKilloran\nForbes\nClifford\nDavis, G.\nHHC Section 2: \n\nNorman\nKing, K.\nBillman\nJalek (Saunders-Rivers)\nFlanagan\nLeitner\nFord\nRay\nWord\nAdams, J.\nBussell\nWimberly\nHouser-Cross
-";
+      var sec = "MS4 Ruck March Groups \n \n HHC Section 1: \n Knauss \n Pope \n Loftis \n Prescott, O. \n Camacho \n Kim\n Churchwell\n Daniels\n Killoran\n Forbes\n Clifford\n Davis, G.\n HHC Section 2: \n \n Norman\n King, K.\n Billman\n Jalek (Saunders-Rivers)\n Flanagan\n Leitner\n Ford\n Ray\n Word\n Adams, J.\n Bussell\n Wimberly\n Houser-Cross";
       this.res.writeHead(200);
       postMessage(sec);
       this.res.end();  

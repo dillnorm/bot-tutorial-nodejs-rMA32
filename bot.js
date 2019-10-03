@@ -13,7 +13,7 @@ function respond() {
   var botRegex = /^\/cool guy/;
   
   if(request.text && Regexp.test(request.text)) {
-     if(request.text && Regexp2.test(request.text)){
+     if(Regexp2.test(request.text)){
       this.res.writeHead(200);
         console.log("Posting PT Plan");
         postMessage("PT Plan:\n\

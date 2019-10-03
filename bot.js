@@ -99,8 +99,118 @@ function ptDay(){
     var d1 = new Date();
     var rep = "";
     if(d1.getDate() == 3){
-        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+        rep = "What: 
+Preparation PD (5 reps) 
+Activities
+ACFT STRENGTH TRAINING
+Deadlifts
+Arm Extension Push-ups
+Leg Tuck and Twist
+Standing Power Throw
+Farmers Carries
+300 m Shuttle Sprint
+
+Recovery
+RD (30 sec) 
+
+Who: 
+Primary Leader
+Ghee
+Secondary Leader
+Kim
+
+
+Where: 
+RAC PAVILION
+w/ movement to ROTC BLDG
+When:  
+0615 Formation
+0630-0730 PT
+"; 
     }
+    else if(d1.getDate() == 4){
+        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+    }  
+    else if(d1.getDate() == 5){
+        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+    } 
+    else if(d1.getDate() == 6){
+        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+    } 
+    else if(d1.getDate() == 7){
+        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+    } 
+    else if(d1.getDate() == 8){
+        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+    } 
+    else if(d1.getDate() == 9){
+        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+    } 
+    else if(d1.getDate() == 10){
+        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+    } 
+    else if(d1.getDate() == 11){
+        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+    } 
+    else if(d1.getDate() == 12){
+        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+    } 
+    else if(d1.getDate() == 13){
+        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+    } 
+    else if(d1.getDate() == 14){
+        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+    } 
+    else if(d1.getDate() == 15){
+        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+    } 
+    else if(d1.getDate() == 16){
+        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+    } 
+    else if(d1.getDate() == 17){
+        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+    } 
+    else if(d1.getDate() == 18){
+        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+    } 
+    else if(d1.getDate() == 19){
+        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+    } 
+    else if(d1.getDate() == 20){
+        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+    } 
+    else if(d1.getDate() == 21){
+        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+    } 
+    else if(d1.getDate() == 22){
+        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+    } 
+    else if(d1.getDate() == 23){
+        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+    } 
+    else if(d1.getDate() == 24){
+        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+    } 
+    else if(d1.getDate() == 25){
+        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+    } 
+    else if(d1.getDate() == 26){
+        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+    } 
+    else if(d1.getDate() == 27){
+        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+    } 
+    else if(d1.getDate() == 28){
+        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+    } 
+    else if(d1.getDate() == 29){
+        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+    } 
+    else if(d1.getDate() == 30){
+        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+    } 
+  
+  
   else{
         rep = "Error Getting PT plan";
         }

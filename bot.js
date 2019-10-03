@@ -144,8 +144,8 @@ function ptDay(){
     else if(d1.getDate() == 29){
         rep = "FOR WEDNESDAY\nWhat: \n\nRuck March\n6MI\nOCPs\n35 lbs.\n\nWho: \nHHC Section 1\n\nWhere: \nRAC Pavilion\n\nWhen:  \n0615 Formation\n0630-0730 PT\n\n\nWhat: \n\nRuck March\n8 Miles\nOCPs\n35 lbs.\n\nWho: \nMSIII’s & HHC Section 2\n\nWhere: \nGentilly Trail\n\nWhen:  \n0400\nFormation\n00410-0730 PT
 "; 
-*/
-    } 
+
+    } */
   else{
         rep = "Error Getting PT plan";
         }

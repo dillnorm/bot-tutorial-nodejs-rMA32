@@ -102,7 +102,7 @@ function ptDay(){
         rep = "PT Plan:\n Formation 0620 \n Stuff"; 
     }
   else{
-        rep = "Error Getting PT plan");
+        rep = "Error Getting PT plan";
         }
   return rep;
 };

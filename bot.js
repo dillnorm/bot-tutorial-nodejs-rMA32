@@ -9,6 +9,8 @@ function respond() {
   var Regexp = /@Gus/i;
   var Regexp2 = /PT/i;
   var Regexp3 = /Hey/i;
+  var Regexp4 = /Abbreviations/i;
+  var Regexp5 = /section group/i;
   
   var botRegex = /^\/cool guy/;
   
@@ -20,14 +22,26 @@ function respond() {
         postMessage(ptDay());
         this.res.end();  
      }
-     else if(request.text && Regexp3.test(request.text)){
+     else if(Regexp3.test(request.text)){
       this.res.writeHead(200);
         postMessage("Wassup");
       this.res.end();  
      }
+    else if(Regexp4.test(request.text)){
+      var abv = "Abbreviations \n\nPD – Preparation Drill \n4C – Four for the Core\nHSD – Hip Stability Drill\nRD – Recovery Drill\nCD – Conditioning Drill\nCL – Climbing Drill \nPSD – PU/SU Drill \nSR – Shuttle Run \nAGR – Ability Group Run\nFM – Foot March \nRR – Release Run\nTR – Terrain Run\nSTC – Strength Training Circuit ";
+      this.res.writeHead(200);
+      postMessage(abv);
+      this.res.end();  
+    }
+    else if(Regexp5.test(request.text)){
+      var sec = "MS4 Ruck March Groups \n\nHHC Section 1:\nKnauss\nPope\nLoftis\nPrescott, O.\nCamacho\nKim\nChurchwell\nDaniels\nKilloran\nForbes\nClifford\nDavis, G.\nHHC Section 2: \n\nNorman\nKing, K.\nBillman\nJalek (Saunders-Rivers)\nFlanagan\nLeitner\nFord\nRay\nWord\nAdams, J.\nBussell\nWimberly\nHouser-Cross
+";
+      this.res.writeHead(200);
+      postMessage(sec);
+      this.res.end();  
+    }
     else{
       var w = "What?";
-      w.bold();
       this.res.writeHead(200);
       postMessage(w);
       this.res.end();
@@ -38,57 +52,7 @@ function respond() {
     postMessage(cool());
     this.res.end();
   }
-  /*var txt = JSON.stringify(request.text);
-  var str = "@Gus";
-  
-  if(request.text && botRegex.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage(cool());
-    this.res.end();
-  }
-  if(str.search("@Gus") != -1) {
-   console.log("care txt2");
-  }
-  console.log("Comparing"+ txt +" and " + str);
- 
-  if(txt == txt2) {
-   console.log("care");
-  }
-  */
-   /*                    
-     if((text.includes("PT")||request.includes("pt"))||((request.includes("pT")||request.includes("Pt"))){
-      this.res.writeHead(200);
-        console.log("Posting PT Plan");
-        postMessage("PT Plan:\n\
-                     Formation 0620");
-      this.res.end();  
-     }
-     else if(text.includes("Hey"){
-      this.res.writeHead(200);
-        postMessage("Wassup");
-      this.res.end();  
-     }
-    else{
-      this.res.writeHead(200);
-      postMessage("What?");
-      this.res.end();
-    }
-    
-  //  var i = 1;                     //  set your counter to 1
 
-  //  function myLoop () {           //  create a loop function
-  //   setTimeout(function () {    //  call a 3s setTimeout when the loop is called
-  //      console.log("Hey Alexa");
-  //      postMessage(cool());
-  //      i++;                     //  increment the counter
- //       if (i < 4) {            //  if the counter < 10, call the loop function
-//         myLoop();             //  ..  again which will trigger another 
- //       }                        //  ..  setTimeout()
-//      }, 3000)
-//    }
-//    myLoop();
-
-  }*/
   else {
     console.log("don't care");
     this.res.writeHead(200);
@@ -99,91 +63,97 @@ function ptDay(){
     var d1 = new Date();
     var rep = "";
     if(d1.getDate() == 3){
-        rep = "What:\nPreparation\nPD (5 reps) \nActivities\nACFT STRENGTH TRAINING\nDeadlifts\nArm Extension Push-ups\nLeg Tuck and Twist\nStanding Power Throw\nFarmers Carries\n300m Shuttle Sprint\n\nRecovery\nRD (30 sec) \n\nWho: \nPrimary Leader\nGhee\nSecondary Leader\nKim\n\nWhere: \nRAC PAVILION\nw/ movement to ROTC BLDG\nWhen:  \n0615 Formation\n0630-0730 PT"; 
-    }
+        rep = "FOR FRIDAY\nWhat:\nPreparation\nPD (5 reps) \nActivities\nACFT STRENGTH TRAINING\nDeadlifts\nArm Extension Push-ups\nLeg Tuck and Twist\nStanding Power Throw\nFarmers Carries\n300m Shuttle Sprint\n\nRecovery\nRD (30 sec) \n\nWho: \nPrimary Leader\nGhee\nSecondary Leader\nKim\n\nWhere: \nRAC PAVILION\nw/ movement to ROTC BLDG\nWhen:  \n0615 Formation\n0630-0730 PT";    }
     else if(d1.getDate() == 4){
-        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+        rep = "FOR MONDAY\nWhat:\n\n\nPreparation\nPD (10 reps)\nActivities\nSPRINT LADDER\nConsisting of 100m,\n200m, 300m, 400m,\nand 800m timed sprints.  \n100m = 25sec\n200m = 45sec\n400m = 90sec\n800m = 4 min\nRecovery\nRD (30 sec) \n\nWho: \nPrimary Leader\nCook\nSecondary Leader\nAdams\n\nWhere: \nRAC PAVILION\nw/ movement to track\n\nWhen:  \n0615 Formation\n0630-0730 PT"; 
     }  
     else if(d1.getDate() == 5){
-        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+        rep = "FOR MONDAY\nWhat:\n\n\nPreparation\nPD (10 reps)\nActivities\nSPRINT LADDER\nConsisting of 100m,\n200m, 300m, 400m,\nand 800m timed sprints.  \n100m = 25sec\n200m = 45sec\n400m = 90sec\n800m = 4 min\nRecovery\nRD (30 sec) \n\nWho: \nPrimary Leader\nCook\nSecondary Leader\nAdams\n\nWhere: \nRAC PAVILION\nw/ movement to track\n\nWhen:  \n0615 Formation\n0630-0730 PT"; 
     } 
     else if(d1.getDate() == 6){
-        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+        rep = "FOR MONDAY\nWhat:\n\n\nPreparation\nPD (10 reps)\nActivities\nSPRINT LADDER\nConsisting of 100m,\n200m, 300m, 400m,\nand 800m timed sprints.  \n100m = 25sec\n200m = 45sec\n400m = 90sec\n800m = 4 min\nRecovery\nRD (30 sec) \n\nWho: \nPrimary Leader\nCook\nSecondary Leader\nAdams\n\nWhere: \nRAC PAVILION\nw/ movement to track\n\nWhen:  \n0615 Formation\n0630-0730 PT"; 
     } 
     else if(d1.getDate() == 7){
-        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+        rep = "FOR WEDNESDAY\nWhat:\n\nRuck March\n4MI\nAPFU’s\n35lbs.\n\nWho: \nHHC Section 2\n\nWhere: \nRAC Pavilion\n\nWhen:  \n0615 Formation\n0630-0730 PT\n\n\n\nWhat: \n\nRuck March\n6MI\nAPFU’s\n35 lbs.\n\nWho: \nMSIII’s & HHC Section 1\n\nWhere: \nGentilly Trail\n\nWhen:  \n0515 Formation\n0530-0730 PT"; 
     } 
     else if(d1.getDate() == 8){
-        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+        rep = "FOR WEDNESDAY\nWhat:\n\nRuck March\n4MI\nAPFU’s\n35lbs.\n\nWho: \nHHC Section 2\n\nWhere: \nRAC Pavilion\n\nWhen:  \n0615 Formation\n0630-0730 PT\n\n\n\nWhat: \n\nRuck March\n6MI\nAPFU’s\n35 lbs.\n\nWho: \nMSIII’s & HHC Section 1\n\nWhere: \nGentilly Trail\n\nWhen:  \n0515 Formation\n0530-0730 PT"; 
     } 
     else if(d1.getDate() == 9){
-        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+        rep = "FOR FRIDAY\nWhat:\n \n Preparation\n PD (10 reps) \n Activities\n ACFT CIRCUIT TRAINING\n \n Cadets will complete 5 rounds of ACFT Circuit Training. \n This consists of Deadlifts, Hand Release \n Push-ups, \n 300M shuttle sprints, Kettlebell carries, \n Overhead Push Press, \n and Leg tuck and twists.\n \n Exercises will be timed at 1 min per exercise.\n Recovery\n RD (30 sec) \n \n Who: \n Primary Leader\n Wells\n Secondary Leader\n Camacho\n \n Where: \n RAC PAVILION\n w/ movement to ROTC BLDG\n \n When:  \n 0615 Formation\n 0630-0730 PT"; 
     } 
     else if(d1.getDate() == 10){
-        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+        rep = "FOR FRIDAY\nWhat:\n \n Preparation\n PD (10 reps) \n Activities\n ACFT CIRCUIT TRAINING\n \n Cadets will complete 5 rounds of ACFT Circuit Training. \n This consists of Deadlifts, Hand Release \n Push-ups, \n 300M shuttle sprints, Kettlebell carries, \n Overhead Push Press, \n and Leg tuck and twists.\n \n Exercises will be timed at 1 min per exercise.\n Recovery\n RD (30 sec) \n \n Who: \n Primary Leader\n Wells\n Secondary Leader\n Camacho\n \n Where: \n RAC PAVILION\n w/ movement to ROTC BLDG\n \n When:  \n 0615 Formation\n 0630-0730 PT"; 
     } 
     else if(d1.getDate() == 11){
-        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+        rep = "FOR MONDAY\nWhat:\n\nPreparation\nPD (5 reps)\nActivities\nBODY WEIGHT CIRCUIT\nCadets conduct circuits consisting of 25\npush-ups, 30 sit-ups, 10 Leg tucks, 20\nLunges, and 20 air squats with 1 lap between circuits. Cadets will complete\n5 circuits.\n\nRecovery\nRD (30 sec) \n\nWho: \nPrimary Leader\nGrizzard\nSecondary Leader\nKing\n\nWhere: \nRAC PAVILION\n\nWhen:\n0615 Formation\n0630-0730 PT    
+"; 
     } 
     else if(d1.getDate() == 12){
-        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+        rep = "FOR MONDAY\nWhat:\n\nPreparation\nPD (5 reps)\nActivities\nBODY WEIGHT CIRCUIT\nCadets conduct circuits consisting of 25\npush-ups, 30 sit-ups, 10 Leg tucks, 20\nLunges, and 20 air squats with 1 lap between circuits. Cadets will complete\n5 circuits.\n\nRecovery\nRD (30 sec) \n\nWho: \nPrimary Leader\nGrizzard\nSecondary Leader\nKing\n\nWhere: \nRAC PAVILION\n\nWhen:\n0615 Formation\n0630-0730 PT    
+"; 
     } 
     else if(d1.getDate() == 13){
-        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+        rep = "FOR MONDAY\nWhat:\n\nPreparation\nPD (5 reps)\nActivities\nBODY WEIGHT CIRCUIT\nCadets conduct circuits consisting of 25\npush-ups, 30 sit-ups, 10 Leg tucks, 20\nLunges, and 20 air squats with 1 lap between circuits. Cadets will complete\n5 circuits.\n\nRecovery\nRD (30 sec) \n\nWho: \nPrimary Leader\nGrizzard\nSecondary Leader\nKing\n\nWhere: \nRAC PAVILION\n\nWhen:\n0615 Formation\n0630-0730 PT    "; 
     } 
     else if(d1.getDate() == 14){
-        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
-    } 
+        rep = "FOR WEDNESDAY\nWhat: \n\nRuck March\n6MI\nAPFU’s\n45 lbs.\n\nWho: \nHHC Section 1\n\nWhere: \nRAC Pavilion\n\nWhen:  \n0615 Formation\n0630-0730 PT\n\nWhat: \n\nRuck March\n6MI\nAPFU’s\n45 lbs.\n\nWho: \nMSIII’s & HHC Section 2\n\nWhere: \nGentilly Trail\n\nWhen:  \n0515 Formation\n0530-0730 PT"; } 
     else if(d1.getDate() == 15){
-        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
-    } 
+        rep = "FOR WEDNESDAY\nWhat: \n\nRuck March\n6MI\nAPFU’s\n45 lbs.\n\nWho: \nHHC Section 1\n\nWhere: \nRAC Pavilion\n\nWhen:  \n0615 Formation\n0630-0730 PT\n\nWhat: \n\nRuck March\n6MI\nAPFU’s\n45 lbs.\n\nWho: \nMSIII’s & HHC Section 2\n\nWhere: \nGentilly Trail\n\nWhen:  \n0515 Formation\n0530-0730 PT"; } 
     else if(d1.getDate() == 16){
-        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+        rep = "FOR FRIDAY\nWhat:\n\n\nPreparation\nPD (10 reps)\nActivities\nAGR \n3 Miles\nRecovery\nRD (30 sec)\n\n\nWho: \nPrimary Leader\nGeter\nSecondary Leader\nPope\n\n\nWhere: \nRAC PAVILION\n\nWhen:  \n0615 Formation\n0630-0730 PT"; 
     } 
     else if(d1.getDate() == 17){
-        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+        rep = "FOR FRIDAY\nWhat:\n\n\nPreparation\nPD (10 reps)\nActivities\nAGR \n3 Miles\nRecovery\nRD (30 sec)\n\n\nWho: \nPrimary Leader\nGeter\nSecondary Leader\nPope\n\n\nWhere: \nRAC PAVILION\n\nWhen:  \n0615 Formation\n0630-0730 PT"; 
     } 
     else if(d1.getDate() == 18){
-        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+        rep = "FOR MONDAY\nWhat:\n\nPreparation\nPD (10 reps)\nActivities\nBODY WEIGHT CIRCUIT\nCadets conduct circuits consisting of 25\npush-ups, 30 sit-ups, 10 Leg tucks, 20\nLunges, and 20 air squats with 1 lap between circuits. Cadets will complete\n5 circuits.\nRecovery\nRD (30 sec) \n\nWho: \nPrimary Leader\nChappell\nSecondary Leader\nFlanagan\n\nWhere: \nRAC PAVILION\nOr RAC Center\n\nWhen:  \n0615 Formation\n0630-0730 PT
+"; 
     } 
     else if(d1.getDate() == 19){
-        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+        rep = "FOR MONDAY\nWhat:\n\nPreparation\nPD (10 reps)\nActivities\nBODY WEIGHT CIRCUIT\nCadets conduct circuits consisting of 25\npush-ups, 30 sit-ups, 10 Leg tucks, 20\nLunges, and 20 air squats with 1 lap between circuits. Cadets will complete\n5 circuits.\nRecovery\nRD (30 sec) \n\nWho: \nPrimary Leader\nChappell\nSecondary Leader\nFlanagan\n\nWhere: \nRAC PAVILION\nOr RAC Center\n\nWhen:  \n0615 Formation\n0630-0730 PT
+"; 
     } 
     else if(d1.getDate() == 20){
-        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+        rep = "FOR MONDAY\n What:\n\nPreparation\nPD (10 reps)\nActivities\nBODY WEIGHT CIRCUIT\nCadets conduct circuits consisting of 25\npush-ups, 30 sit-ups, 10 Leg tucks, 20\nLunges, and 20 air squats with 1 lap between circuits. Cadets will complete\n5 circuits.\nRecovery\nRD (30 sec) \n\nWho: \nPrimary Leader\nChappell\nSecondary Leader\nFlanagan\n\nWhere: \nRAC PAVILION\nOr RAC Center\n\nWhen:  \n0615 Formation\n0630-0730 PT
+"; 
     } 
     else if(d1.getDate() == 21){
-        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+        rep = "FOR WEDNESDAY\nWhat: \n\nRuck March\n6MI\nAPFU’s\n45 lbs.\n\nWho: \nHHC Section 2\n\nWhere: \nRAC Pavilion\n\nWhen:  \n0615 Formation\n0630-0730 PT\n\n\nWhat: \n\nRuck March\n6MI\nAPFU’s\n45 lbs.\n\nWho: \nMSIII’s & HHC Section 1\n\nWhere: \nGentilly Trail\n\nWhen:  \n0515 Formation\n0530-0730 PT
+"; 
     } 
     else if(d1.getDate() == 22){
-        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+        rep = "FOR WEDNESDAY\nWhat: \n\nRuck March\n6MI\nAPFU’s\n45 lbs.\n\nWho: \nHHC Section 2\n\nWhere: \nRAC Pavilion\n\nWhen:  \n0615 Formation\n0630-0730 PT\n\n\nWhat: \n\nRuck March\n6MI\nAPFU’s\n45 lbs.\n\nWho: \nMSIII’s & HHC Section 1\n\nWhere: \nGentilly Trail\n\nWhen:  \n0515 Formation\n0530-0730 PT
+"; 
     } 
     else if(d1.getDate() == 23){
-        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+        rep = "FOR FRIDAY\nWhat: \n\nPreparation\nPD (10 reps)\nActivities\n\n30/60s followed by\n60/120s, and\nfinishing with\n30/60s.\n\nRecovery\nRD (30 sec) \n\nWho: \nPrimary Leader\nEason\nSecondary Leader\nSanders Rivers\n\n\nWhere: \nRAC PAVILION\nw/ movement to Paulson Stadium Parking lot\nWhen:  \n0615 Formation\n0630-0730 PT
+"; 
     } 
     else if(d1.getDate() == 24){
-        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+        rep = "FOR FRIDAY\nWhat: \n\nPreparation\nPD (10 reps)\nActivities\n\n30/60s followed by\n60/120s, and\nfinishing with\n30/60s.\n\nRecovery\nRD (30 sec) \n\nWho: \nPrimary Leader\nEason\nSecondary Leader\nSanders Rivers\n\n\nWhere: \nRAC PAVILION\nw/ movement to Paulson Stadium Parking lot\nWhen:  \n0615 Formation\n0630-0730 PT
+"; 
     } 
     else if(d1.getDate() == 25){
-        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+        rep = "FOR MONDAY\nWhat: \n\nPreparation\nPD (5 reps)\nActivities\nCO Assessment\nMurph Squad competition\n\nRecovery\nRD (30 sec)\n\n\nWho: \nPrimary Leader\nLowder\nSecondary Leader\nForbes\n\nWhere: \nRAC PAVILION\nOr RAC Center\n\nWhen:  \n00545 Formation\n0600-0700 PT
+"; 
     } 
     else if(d1.getDate() == 26){
-        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+        rep = "FOR MONDAY\nWhat: \n\nPreparation\nPD (5 reps)\nActivities\nCO Assessment\nMurph Squad competition\n\nRecovery\nRD (30 sec)\n\n\nWho: \nPrimary Leader\nLowder\nSecondary Leader\nForbes\n\nWhere: \nRAC PAVILION\nOr RAC Center\n\nWhen:  \n00545 Formation\n0600-0700 PT
+"; 
     } 
     else if(d1.getDate() == 27){
-        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+        rep = "FOR MONDAY\nWhat: \n\nPreparation\nPD (5 reps)\nActivities\nCO Assessment\nMurph Squad competition\n\nRecovery\nRD (30 sec)\n\n\nWho: \nPrimary Leader\nLowder\nSecondary Leader\nForbes\n\nWhere: \nRAC PAVILION\nOr RAC Center\n\nWhen:  \n00545 Formation\n0600-0700 PT
+"; 
     } 
     else if(d1.getDate() == 28){
-        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+        rep = "FOR WEDNESDAY\nWhat: \n\nRuck March\n6MI\nOCPs\n35 lbs.\n\nWho: \nHHC Section 1\n\nWhere: \nRAC Pavilion\n\nWhen:  \n0615 Formation\n0630-0730 PT\n\n\nWhat: \n\nRuck March\n8 Miles\nOCPs\n35 lbs.\n\nWho: \nMSIII’s & HHC Section 2\n\nWhere: \nGentilly Trail\n\nWhen:  \n0400\nFormation\n00410-0730 PT
+"; 
     } 
     else if(d1.getDate() == 29){
-        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+        rep = "FOR WEDNESDAY\nWhat: \n\nRuck March\n6MI\nOCPs\n35 lbs.\n\nWho: \nHHC Section 1\n\nWhere: \nRAC Pavilion\n\nWhen:  \n0615 Formation\n0630-0730 PT\n\n\nWhat: \n\nRuck March\n8 Miles\nOCPs\n35 lbs.\n\nWho: \nMSIII’s & HHC Section 2\n\nWhere: \nGentilly Trail\n\nWhen:  \n0400\nFormation\n00410-0730 PT
+"; 
     } 
-    else if(d1.getDate() == 30){
-        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
-    } 
-  
-  
   else{
         rep = "Error Getting PT plan";
         }

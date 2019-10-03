@@ -99,34 +99,7 @@ function ptDay(){
     var d1 = new Date();
     var rep = "";
     if(d1.getDate() == 3){
-        rep = "What: 
-Preparation PD (5 reps) 
-Activities
-ACFT STRENGTH TRAINING
-Deadlifts
-Arm Extension Push-ups
-Leg Tuck and Twist
-Standing Power Throw
-Farmers Carries
-300 m Shuttle Sprint
-
-Recovery
-RD (30 sec) 
-
-Who: 
-Primary Leader
-Ghee
-Secondary Leader
-Kim
-
-
-Where: 
-RAC PAVILION
-w/ movement to ROTC BLDG
-When:  
-0615 Formation
-0630-0730 PT
-"; 
+        rep = "What:\nPreparation\nPD (5 reps) \nActivities\nACFT STRENGTH TRAINING\nDeadlifts\nArm Extension Push-ups\nLeg Tuck and Twist\nStanding Power Throw\nFarmers Carries\n300m Shuttle Sprint\n\nRecovery\nRD (30 sec) \n\nWho: \nPrimary Leader\nGhee\nSecondary Leader\nKim\n\nWhere: \nRAC PAVILION\nw/ movement to ROTC BLDG\nWhen:  \n0615 Formation\n0630-0730 PT"; 
     }
     else if(d1.getDate() == 4){
         rep = "PT Plan:\n Formation 0620 \n Stuff"; 

@@ -14,7 +14,11 @@ function respond() {
   
   if(request.text && Regexp.test(request.text)) {
      if(Regexp2.test(request.text)){
-        ptDay();
+        var pt = ptDay();
+        this.res.writeHead(200);
+        console.log("Posting PT Plan");
+        postMessage(pt);
+        this.res.end();  
      }
      else if(request.text && Regexp3.test(request.text)){
       this.res.writeHead(200);
@@ -91,6 +95,17 @@ function respond() {
     this.res.end();
   }
 }
+function ptDay(){
+    var d1 = new Date();
+    var rep = "";
+    if(d1.getDate() == 3){
+        rep = "PT Plan:\n Formation 0620 \n Stuff"; 
+    }
+  else{
+        rep = "Error Getting PT plan");
+        }
+  return rep;
+};
 
 function postMessage(response) {
   var botResponse,options, body, botReq;
@@ -108,17 +123,7 @@ function postMessage(response) {
     "text" : botResponse
   };
   
-  function ptDay(){
-    var d1 = new Date();
-    if(d1.getDate() == 3){
-        this.res.writeHead(200);
-        console.log("Posting PT Plan");
-        postMessage("PT Plan:\n\
-                     Formation 0620");
-        this.res.end();  
-    }
-    
-  };
+
 
   console.log('sending ' + botResponse + ' to ' + botID);
 

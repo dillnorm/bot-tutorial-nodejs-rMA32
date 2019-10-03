@@ -14,10 +14,10 @@ function respond() {
   
   if(request.text && Regexp.test(request.text)) {
      if(Regexp2.test(request.text)){
-        var pt = ptDay();
+        console.log("Testing PT Plan");
         this.res.writeHead(200);
         console.log("Posting PT Plan");
-        postMessage(pt);
+        postMessage(ptDay());
         this.res.end();  
      }
      else if(request.text && Regexp3.test(request.text)){

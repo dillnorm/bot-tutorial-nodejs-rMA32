@@ -14,11 +14,7 @@ function respond() {
   
   if(request.text && Regexp.test(request.text)) {
      if(Regexp2.test(request.text)){
-      this.res.writeHead(200);
-        console.log("Posting PT Plan");
-        postMessage("PT Plan:\n\
-                     Formation 0620");
-      this.res.end();  
+        ptDay();
      }
      else if(request.text && Regexp3.test(request.text)){
       this.res.writeHead(200);
@@ -26,8 +22,10 @@ function respond() {
       this.res.end();  
      }
     else{
+      var w = "What?";
+      w.bold();
       this.res.writeHead(200);
-      postMessage("What?");
+      postMessage(w);
       this.res.end();
     }
   }
@@ -108,6 +106,18 @@ function postMessage(response) {
   body = {
     "bot_id" : botID,
     "text" : botResponse
+  };
+  
+  function ptDay(){
+    var d1 = new Date();
+    if(d1.getDate() == 3){
+        this.res.writeHead(200);
+        console.log("Posting PT Plan");
+        postMessage("PT Plan:\n\
+                     Formation 0620");
+        this.res.end();  
+    }
+    
   };
 
   console.log('sending ' + botResponse + ' to ' + botID);

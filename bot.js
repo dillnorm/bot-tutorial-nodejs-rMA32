@@ -64,13 +64,13 @@ function ptDay(){
     var rep = "";
     if(d1.getDate() == 3){
         rep = "FOR FRIDAY\n What:\n Preparation\n PD (5 reps) \n Activities\n ACFT STRENGTH TRAINING\n Deadlifts\n Arm Extension Push-ups\n Leg Tuck and Twist\n Standing Power Throw\n Farmers Carries\n 300m Shuttle Sprint\n \n Recovery\n RD (30 sec) \n \n Who: \n Primary Leader\n Ghee\n Secondary Leader\n Kim\n \n Where: \n RAC PAVILION\n w/ movement to ROTC BLDG\n When:  \n0615 Formation\n0630-0730 PT";    
-    } /*   
+    }   
     else if(d1.getDate() == 4){
-        rep = "FOR MONDAY\n What:\n \n \n Preparation\n PD (10 reps)\n Activities\n SPRINT LADDER\n Consisting of 100m,\n 200m, 300m, 400m,\n and 800m timed sprints.  \n 100m = 25sec\n 200m = 45sec\n 400m = 90sec\n 800m = 4 min\n Recovery\n RD (30 sec) \n \n Who: \n Primary Leader\n Cook\n Secondary Leader\n Adams\n \n Where: \n RAC PAVILION\n w/ movement to track\n \n When:  \n 0615 Formation\n 0630-0730 PT";    }  
+        rep = "FOR MONDAY\n What:\n Preparation\n PD (5 reps) \n Activities\n ACFT STRENGTH TRAINING\n Deadlifts\n Arm Extension Push-ups\n Leg Tuck and Twist\n Standing Power Throw\n Farmers Carries\n 300m Shuttle Sprint\n \n Recovery\n RD (30 sec) \n \n Who: \n Primary Leader\n Ghee\n Secondary Leader\n Kim\n \n Where: \n RAC PAVILION\n w/ movement to ROTC BLDG\n When:  \n0615 Formation\n0630-0730 PT";    }  
     else if(d1.getDate() == 5){
-        rep = "FOR MONDAY\n What:\n \n \n Preparation\n PD (10 reps)\n Activities\n SPRINT LADDER\n Consisting of 100m,\n 200m, 300m, 400m,\n and 800m timed sprints.  \n 100m = 25sec\n 200m = 45sec\n 400m = 90sec\n 800m = 4 min\n Recovery\n RD (30 sec) \n \n Who: \n Primary Leader\n Cook\n Secondary Leader\n Adams\n \n Where: \n RAC PAVILION\n w/ movement to track\n \n When:  \n 0615 Formation\n 0630-0730 PT";    } 
+        rep = "FOR MONDAY\n What:\n Preparation\n PD (5 reps) \n Activities\n ACFT STRENGTH TRAINING\n Deadlifts\n Arm Extension Push-ups\n Leg Tuck and Twist\n Standing Power Throw\n Farmers Carries\n 300m Shuttle Sprint\n \n Recovery\n RD (30 sec) \n \n Who: \n Primary Leader\n Ghee\n Secondary Leader\n Kim\n \n Where: \n RAC PAVILION\n w/ movement to ROTC BLDG\n When:  \n0615 Formation\n0630-0730 PT";    } 
     else if(d1.getDate() == 6){
-        rep = "FOR MONDAY\n What:\n \n \n Preparation\n PD (10 reps)\n Activities\n SPRINT LADDER\n Consisting of 100m,\n 200m, 300m, 400m,\n and 800m timed sprints.  \n 100m = 25sec\n 200m = 45sec\n 400m = 90sec\n 800m = 4 min\n Recovery\n RD (30 sec) \n \n Who: \n Primary Leader\n Cook\n Secondary Leader\n Adams\n \n Where: \n RAC PAVILION\n w/ movement to track\n \n When:  \n 0615 Formation\n 0630-0730 PT";    } 
+        rep = "FOR MONDAY\n What:\n Preparation\n PD (5 reps) \n Activities\n ACFT STRENGTH TRAINING\n Deadlifts\n Arm Extension Push-ups\n Leg Tuck and Twist\n Standing Power Throw\n Farmers Carries\n 300m Shuttle Sprint\n \n Recovery\n RD (30 sec) \n \n Who: \n Primary Leader\n Ghee\n Secondary Leader\n Kim\n \n Where: \n RAC PAVILION\n w/ movement to ROTC BLDG\n When:  \n0615 Formation\n0630-0730 PT";    } 
     else if(d1.getDate() == 7){
         rep = "FOR WEDNESDAY \n What:\n \n Ruck March\n 4MI\n APFU’s\n 35lbs.\n \n Who: \n HHC Section 2\n \n Where: \n RAC Pavilion\n \n When:  \n 0615 Formation\n 0630-0730 PT\n \n \n \n What: \n \n Ruck March\n 6MI\n APFU’s\n 35 lbs.\n \n Who: \n MSIII’s & HHC Section 1\n \n Where: \n Gentilly Trail\n \n When:  \n 0515 Formation\n 0530-0730 PT";    } 
     else if(d1.getDate() == 8){
@@ -79,7 +79,7 @@ function ptDay(){
         rep = "FOR FRIDAY\n What:\n  \n  Preparation\n PD (10 reps) \n Activities\n ACFT CIRCUIT TRAINING\n \n Cadets will complete 5 rounds of ACFT Circuit Training. \n This consists of Deadlifts, Hand Release \n  Push-ups, \n 300M shuttle sprints, Kettlebell carries, \n Overhead Push Press, \n and Leg tuck and twists.\n \n Exercises will be timed at 1 min per exercise.\n Recovery\n RD (30 sec) \n \n Who: \n Primary Leader\n Wells\n Secondary Leader\n Camacho\n \n Where: \n RAC PAVILION\n w/ movement to ROTC BLDG\n \n When:  \n 0615 Formation\n 0630-0730 PT";    } 
     else if(d1.getDate() == 10){
         rep = "FOR FRIDAY\n What:\n \n Preparation\n PD (10 reps) \n Activities\n ACFT CIRCUIT TRAINING\n \n Cadets will complete 5 rounds of ACFT Circuit Training. \n This consists of Deadlifts, Hand Release \n Push-ups, \n 300M shuttle sprints, Kettlebell carries, \n Overhead Push Press, \n and Leg tuck and twists.\n \n Exercises will be timed at 1 min per exercise.\n Recovery\n RD (30 sec) \n \n Who: \n Primary Leader\n Wells\n Secondary Leader\n Camacho\n \n Where: \n RAC PAVILION\n w/ movement to ROTC BLDG\n \n When:  \n 0615 Formation\n 0630-0730 PT"; 
-    } 
+    } /*
     else if(d1.getDate() == 11){
         rep = "FOR MONDAY\n What: \n \n Preparation \n PD (5 reps)\n Activities\n BODY WEIGHT CIRCUIT\n Cadets conduct circuits consisting of 25\n push-ups, 30 sit-ups, 10 Leg tucks, 20\n Lunges, and 20 air squats with 1 lap between circuits. Cadets will complete\n5 circuits.\n \n Recovery\n RD (30 sec) \n \n Who: \n Primary Leader\n Grizzard\n Secondary Leader\n King\n \n Where: \n RAC PAVILION\n \n When:\n 0615 Formation\n 0630-0730 PT    "; 
     } 

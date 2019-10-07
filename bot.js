@@ -60,25 +60,7 @@ function respond() {
     this.res.end();
   }
 }
-/*var thisExpressions = [/something/, /something_else/, /and_something_else/];
-var thisExpressions2 = [/else/, /something_else/, /and_something_else/];
-var thisString = 'else';
 
-function matchInArray(request, expressions) {
-
-    var len = expressions.length,
-        i = 0;
-
-    for (; i < len; i++) {
-        if (expressions[i].match(request.text)) {
-            return true;
-        }
-    }
-
-    return false;
-
-};
-*/
 function ptDay(){
     var d1 = new Date();
     var rep = "";
@@ -122,7 +104,7 @@ function ptDay(){
     else if(d1.getDate() == 18){
         rep = "FOR MONDAY \n What: \n \n Preparation \n PD (10 reps) \n Activities \n BODY WEIGHT CIRCUIT \n Cadets conduct circuits consisting of 25 \n push-ups, 30 sit-ups, 10 Leg tucks, 20 \n Lunges, and 20 air squats with 1 lap between circuits. Cadets will complete \n 5 circuits. \n Recovery \n RD (30 sec) \n \n Who: \n Primary Leader \n Chappell \n Secondary Leader \n Flanagan \n \n Where: \n RAC PAVILION \n Or RAC Center \n \n When:  \n 0615 Formation \n 0630-0730 PT
 "; 
-    } 
+    } /*
     else if(d1.getDate() == 19){
         rep = "FOR MONDAY \n What: \n \n Preparation \n PD (10 reps) \n Activities \n BODY WEIGHT CIRCUIT \n Cadets conduct circuits consisting of 25 \n push-ups, 30 sit-ups, 10 Leg tucks, 20 \n Lunges, and 20 air squats with 1 lap between circuits. Cadets will complete \n 5 circuits. \n Recovery \n RD (30 sec) \n \n Who: \n Primary Leader \n Chappell \n Secondary Leader \n Flanagan \n \n Where: \n RAC PAVILION \n Or RAC Center \n \n When:  \n 0615 Formation \n 0630-0730 PT"; 
     } 
@@ -160,7 +142,7 @@ function ptDay(){
     else if(d1.getDate() == 29){
         rep = "FOR WEDNESDAY \n What: \n \n Ruck March \n 6MI \n OCPs \n 35 lbs. \n \n Who: \n HHC Section 1 \n \n Where: \n RAC Pavilion \n \n When:  \n 0615 Formation \n 0630-0730 PT \n \n \n What: \n \n Ruck March \n 8 Miles \n OCPs \n 35 lbs. \n \n Who: \n MSIII’s & HHC Section 2 \n \n Where: \n Gentilly Trail \n \n When:  \n 0400 \n Formation \n 0410-0730 PT"; 
 
-    } 
+    } */
   else{
         rep = "Error Getting PT plan";
         }

@@ -83,7 +83,7 @@ function ptDay(){
     else if(d1.getDate() == 10){
         rep = "FOR FRIDAY\n What:\n \n Preparation\n PD (10 reps) \n Activities\n ACFT CIRCUIT TRAINING\n \n Cadets will complete 5 rounds of ACFT Circuit Training. \n This consists of Deadlifts, Hand Release \n Push-ups, \n 300M shuttle sprints, Kettlebell carries, \n Overhead Push Press, \n and Leg tuck and twists.\n \n Exercises will be timed at 1 min per exercise.\n Recovery\n RD (30 sec) \n \n Who: \n Primary Leader\n Wells\n Secondary Leader\n Camacho\n \n Where: \n RAC PAVILION\n w/ movement to ROTC BLDG\n \n When:  \n 0615 Formation\n 0630-0730 PT"; 
     } 
-  /*
+  
     else if(d1.getDate() == 11){
         rep = "FOR MONDAY \n What: \n \n Preparation \n PD (5 reps) \n Activities \n BODY WEIGHT CIRCUIT \n Cadets conduct circuits consisting of 25 \n push-ups, 30 sit-ups, 10 Leg tucks, 20 \n Lunges, and 20 air squats with 1 lap between circuits. Cadets will complete \n5 circuits. \n \n Recovery \n RD (30 sec) \n \n Who: \n Primary Leader \n Grizzard \n Secondary Leader \n King \n \n Where: \n RAC PAVILION \n \n When: \n 0615 Formation \n 0630-0730 PT  "; 
     } 
@@ -92,6 +92,7 @@ function ptDay(){
     } 
     else if(d1.getDate() == 13){
         rep = "FOR MONDAY \n What: \n \n Preparation \n PD (5 reps) \n Activities \n BODY WEIGHT CIRCUIT \n Cadets conduct circuits consisting of 25 \n push-ups, 30 sit-ups, 10 Leg tucks, 20 \n Lunges, and 20 air squats with 1 lap between circuits. Cadets will complete \n5 circuits. \n \n Recovery \n RD (30 sec) \n \n Who: \n Primary Leader \n Grizzard \n Secondary Leader \n King \n \n Where: \n RAC PAVILION \n \n When: \n 0615 Formation \n 0630-0730 PT  ";      } 
+    /*
     
     else if(d1.getDate() == 14){
         rep = "FOR WEDNESDAY \n What: \n \n Ruck March \n 6MI \n APFU’s \n 45 lbs. \n \n Who: \n HC Section 1 \n \n Where: \n RAC Pavilion \n \n When:  \n 0615 Formation \n 0630-0730 PT \n \n What: \n \n Ruck March \n 6MI \n APFU’s \n 45 lbs. \n \n Who: \n MSIII’s & HHC Section 2 \n \n Where: \n Gentilly Trail \n \n When:  \n 0515 Formation \n 0530-0730 PT"; } 

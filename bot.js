@@ -40,6 +40,7 @@ function respond() {
       postMessage(sec);
       this.res.end();  
     }
+    
     else{
       var w = "What?";
       this.res.writeHead(200);
@@ -59,6 +60,25 @@ function respond() {
     this.res.end();
   }
 }
+/*var thisExpressions = [/something/, /something_else/, /and_something_else/];
+var thisExpressions2 = [/else/, /something_else/, /and_something_else/];
+var thisString = 'else';
+
+function matchInArray(request, expressions) {
+
+    var len = expressions.length,
+        i = 0;
+
+    for (; i < len; i++) {
+        if (expressions[i].match(request.text)) {
+            return true;
+        }
+    }
+
+    return false;
+
+};
+*/
 function ptDay(){
     var d1 = new Date();
     var rep = "";
@@ -81,14 +101,14 @@ function ptDay(){
         rep = "FOR FRIDAY\n What:\n \n Preparation\n PD (10 reps) \n Activities\n ACFT CIRCUIT TRAINING\n \n Cadets will complete 5 rounds of ACFT Circuit Training. \n This consists of Deadlifts, Hand Release \n Push-ups, \n 300M shuttle sprints, Kettlebell carries, \n Overhead Push Press, \n and Leg tuck and twists.\n \n Exercises will be timed at 1 min per exercise.\n Recovery\n RD (30 sec) \n \n Who: \n Primary Leader\n Wells\n Secondary Leader\n Camacho\n \n Where: \n RAC PAVILION\n w/ movement to ROTC BLDG\n \n When:  \n 0615 Formation\n 0630-0730 PT"; 
     } 
     else if(d1.getDate() == 11){
-        rep = "FOR MONDAY\n What: \n \n Preparation \n PD (5 reps)\n Activities\n BODY WEIGHT CIRCUIT\n Cadets conduct circuits consisting of 25\n push-ups, 30 sit-ups, 10 Leg tucks, 20\n Lunges, and 20 air squats with 1 lap between circuits. Cadets will complete\n5 circuits.\n \n Recovery\n RD (30 sec) \n \n Who: \n Primary Leader\n Grizzard\n Secondary Leader\n King\n \n Where: \n RAC PAVILION\n \n When:\n 0615 Formation\n 0630-0730 PT    "; 
+        rep = "FOR MONDAY \n What: \n \n Preparation \n PD (5 reps) \n Activities \n BODY WEIGHT CIRCUIT \n Cadets conduct circuits consisting of 25 \n push-ups, 30 sit-ups, 10 Leg tucks, 20 \n Lunges, and 20 air squats with 1 lap between circuits. Cadets will complete \n5 circuits. \n \n Recovery \n RD (30 sec) \n \n Who: \n Primary Leader \n Grizzard \n Secondary Leader \n King \n \n Where: \n RAC PAVILION \n \n When: \n 0615 Formation \n 0630-0730 PT  "; 
     } 
     else if(d1.getDate() == 12){
-        rep = "FOR MONDAY\n What: \n \n Preparation \n PD (5 reps)\n Activities\n BODY WEIGHT CIRCUIT\n Cadets conduct circuits consisting of 25\n push-ups, 30 sit-ups, 10 Leg tucks, 20\n Lunges, and 20 air squats with 1 lap between circuits. Cadets will complete\n5 circuits.\n \n Recovery\n RD (30 sec) \n \n Who: \n Primary Leader\n Grizzard\n Secondary Leader\n King\n \n Where: \n RAC PAVILION\n \n When:\n 0615 Formation\n 0630-0730 PT    "; 
+        rep = "FOR MONDAY \n What: \n \n Preparation \n PD (5 reps) \n Activities \n BODY WEIGHT CIRCUIT \n Cadets conduct circuits consisting of 25 \n push-ups, 30 sit-ups, 10 Leg tucks, 20 \n Lunges, and 20 air squats with 1 lap between circuits. Cadets will complete \n5 circuits. \n \n Recovery \n RD (30 sec) \n \n Who: \n Primary Leader \n Grizzard \n Secondary Leader \n King \n \n Where: \n RAC PAVILION \n \n When: \n 0615 Formation \n 0630-0730 PT  "; 
     } 
     else if(d1.getDate() == 13){
-        rep = "FOR MONDAY\n What: \n \n Preparation \n PD (5 reps)\n Activities\n BODY WEIGHT CIRCUIT\n Cadets conduct circuits consisting of 25\n push-ups, 30 sit-ups, 10 Leg tucks, 20\n Lunges, and 20 air squats with 1 lap between circuits. Cadets will complete\n5 circuits.\n \n Recovery\n RD (30 sec) \n \n Who: \n Primary Leader\n Grizzard\n Secondary Leader\n King\n \n Where: \n RAC PAVILION\n \n When:\n 0615 Formation\n 0630-0730 PT        } 
-    /*
+        rep = "FOR MONDAY \n What: \n \n Preparation \n PD (5 reps) \n Activities \n BODY WEIGHT CIRCUIT \n Cadets conduct circuits consisting of 25 \n push-ups, 30 sit-ups, 10 Leg tucks, 20 \n Lunges, and 20 air squats with 1 lap between circuits. Cadets will complete \n5 circuits. \n \n Recovery \n RD (30 sec) \n \n Who: \n Primary Leader \n Grizzard \n Secondary Leader \n King \n \n Where: \n RAC PAVILION \n \n When: \n 0615 Formation \n 0630-0730 PT  ";      } 
+    
     else if(d1.getDate() == 14){
         rep = "FOR WEDNESDAY\nWhat: \n\n Ruck March\n6MI\n APFU’s\n45 lbs.\n\n Who: \n HC Section 1\n\nWhere: \nRAC Pavilion\n\nWhen:  \n0615 Formation\n0630-0730 PT\n\nWhat: \n\nRuck March\n6MI\nAPFU’s\n45 lbs.\n\nWho: \nMSIII’s & HHC Section 2\n\nWhere: \nGentilly Trail\n\nWhen:  \n0515 Formation\n0530-0730 PT"; } 
     else if(d1.getDate() == 15){
@@ -147,7 +167,7 @@ function ptDay(){
         rep = "FOR WEDNESDAY\nWhat: \n\nRuck March\n6MI\nOCPs\n35 lbs.\n\nWho: \nHHC Section 1\n\nWhere: \nRAC Pavilion\n\nWhen:  \n0615 Formation\n0630-0730 PT\n\n\nWhat: \n\nRuck March\n8 Miles\nOCPs\n35 lbs.\n\nWho: \nMSIII’s & HHC Section 2\n\nWhere: \nGentilly Trail\n\nWhen:  \n0400\nFormation\n00410-0730 PT
 "; 
 
-    } */
+    } 
   else{
         rep = "Error Getting PT plan";
         }

@@ -116,7 +116,7 @@ function ptDay(){
     else if(d1.getDate() == 20){
         rep = "FOR MONDAY \n What: \n \n Preparation \n PD (10 reps) \n Activities \n BODY WEIGHT CIRCUIT \n Cadets conduct circuits consisting of 25 \n push-ups, 30 sit-ups, 10 Leg tucks, 20 \n Lunges, and 20 air squats with 1 lap between circuits. Cadets will complete \n 5 circuits. \n Recovery \n RD (30 sec) \n \n Who: \n Primary Leader \n Chappell \n Secondary Leader \n Flanagan \n \n Where: \n RAC PAVILION \n Or RAC Center \n \n When:  \n 0615 Formation \n 0630-0730 PT"; 
     } 
-  /*
+ 
     else if(d1.getDate() == 21){
         rep = "FOR WEDNESDAY \n What: \n \n Ruck March \n 6MI \n APFU’s \n 45 lbs. \n \n Who: \n HHC Section 2 \n \n Where: \n RAC Pavilion \n \n When:  \n 0615 Formation \n 0630-0730 PT \n \n \n What: \n \n Ruck March \n 6MI \n APFU’s \n 45 lbs. \n \n Who: \n MSIII’s & HHC Section 1 \n \n Where: \n Gentilly Trail \n \n When:  \n 0515 Formation \n 0530-0730 PT
 "; 
@@ -131,6 +131,7 @@ function ptDay(){
     else if(d1.getDate() == 24){
         rep = "FOR FRIDAY \n What: \n \n Preparation \n PD (10 reps) \n Activities \n \n 30/60s followed by \n 60/120s, and \n finishing with \n 30/60s. \n \n Recovery \n RD (30 sec) \n \n Who: \n Primary Leader \n Eason \n Secondary Leader \n Sanders Rivers \n \n \n Where: \n RAC PAVILION \n w/ movement to Paulson Stadium Parking lot \n When:  \n 0615 Formation \n 0630-0730 PT"; 
     } 
+  /*
     else if(d1.getDate() == 25){
         rep = "FOR MONDAY \n What: \n \n Preparation \n PD (5 reps) \n Activities \n CO Assessment \n Murph Squad competition \n \n Recovery \n RD (30 sec) \n \n \n Who: \n Primary Leader \n Lowder \n Secondary Leader \n Forbes \n \n Where: \n RAC PAVILION \n Or RAC Center \n \n When:  \n 00545 Formation \n 0600-0700 PT
 "; 

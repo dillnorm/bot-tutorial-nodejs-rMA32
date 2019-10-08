@@ -20,24 +20,24 @@ function respond() {
         console.log("Testing PT Plan");
         this.res.writeHead(200);
         console.log("Posting PT Plan");
-        postMessage("@"+request.nickname + ptDay());
+        postMessage(ptDay());
         this.res.end();  
      }
      else if(Regexp3.test(request.text)){
       this.res.writeHead(200);
-        postMessage("@"+request.nickname +" Wassup");
+        postMessage(" Wassup");
       this.res.end();  
      }
     else if(Regexp4.test(request.text)){
       var abv = "Abbreviations \n\nPD – Preparation Drill \n4C – Four for the Core\nHSD – Hip Stability Drill\nRD – Recovery Drill\nCD – Conditioning Drill\nCL – Climbing Drill \nPSD – PU/SU Drill \nSR – Shuttle Run \nAGR – Ability Group Run\nFM – Foot March \nRR – Release Run\nTR – Terrain Run\nSTC – Strength Training Circuit ";
       this.res.writeHead(200);
-      postMessage("@"+request.nickname + abv);
+      postMessage(abv);
       this.res.end();  
     }
     else if(Regexp5.test(request.text)||Regexp6.test(request.text)){
       var sec = "MS4 Ruck March Groups \n \n HHC Section 1: \n Knauss \n Pope \n Loftis \n Prescott, O. \n Camacho \n Kim\n Churchwell\n Daniels\n Killoran\n Forbes\n Clifford\n Davis, G.\n HHC Section 2: \n \n Norman\n King, K.\n Billman\n Jalek (Saunders-Rivers)\n Flanagan\n Leitner\n Ford\n Ray\n Word\n Adams, J.\n Bussell\n Wimberly\n Houser-Cross";
       this.res.writeHead(200);
-      postMessage("@"+request.nickname + sec);
+      postMessage(sec);
       this.res.end();  
     }
     

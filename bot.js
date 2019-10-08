@@ -97,9 +97,9 @@ function ptDay(){
     
     
     else if(d1.getDate() == 14){
-        rep = "FOR WEDNESDAY \n What: \n \n Ruck March \n 6MI \n APFU’s \n 45 lbs. \n \n Who: \n HC Section 1 \n \n Where: \n RAC Pavilion \n \n When:  \n 0615 Formation \n 0630-0730 PT \n \n What: \n \n Ruck March \n 6MI \n APFU’s \n 45 lbs. \n \n Who: \n MSIII’s & HHC Section 2 \n \n Where: \n Gentilly Trail \n \n When:  \n 0515 Formation \n 0530-0730 PT"; } 
+        rep = "FOR WEDNESDAY \n What: \n \n Ruck March \n 6MI \n APFU’s \n 45 lbs. \n \n Who: \n HC Section 1 \n \n Where: \n RAC Pavilion \n \n When:  \n 0515 Formation \n 0530-0730 PT \n \n What: \n \n Ruck March \n 6MI \n APFU’s \n 45 lbs. \n \n Who: \n MSIII’s & HHC Section 2 \n \n Where: \n Gentilly Trail \n \n When:  \n 0515 Formation \n 0530-0730 PT"; } 
     else if(d1.getDate() == 15){
-        rep = "FOR WEDNESDAY \n What: \n \n Ruck March \n 6MI \n APFU’s \n 45 lbs. \n \n Who: \n HC Section 1 \n \n Where: \n RAC Pavilion \n \n When:  \n 0615 Formation \n 0630-0730 PT \n \n What: \n \n Ruck March \n 6MI \n APFU’s \n 45 lbs. \n \n Who: \n MSIII’s & HHC Section 2 \n \n Where: \n Gentilly Trail \n \n When:  \n 0515 Formation \n 0530-0730 PT"; } 
+        rep = "FOR WEDNESDAY \n What: \n \n Ruck March \n 6MI \n APFU’s \n 45 lbs. \n \n Who: \n HC Section 1 \n \n Where: \n RAC Pavilion \n \n When:  \n 0515 Formation \n 0530-0730 PT \n \n What: \n \n Ruck March \n 6MI \n APFU’s \n 45 lbs. \n \n Who: \n MSIII’s & HHC Section 2 \n \n Where: \n Gentilly Trail \n \n When:  \n 0515 Formation \n 0530-0730 PT"; } 
   
   else if(d1.getDate() == 16){
         rep = "FOR FRIDAY \n What: \n \n \n Preparation \n PD (10 reps) \n Activities \n AGR \n 3 Miles \n Recovery \n RD (30 sec) \n \n \n Who: \n Primary Leader \n Geter \n Secondary Leader \n Pope \n \n \n Where: \n RAC PAVILION \n \n When:  \n 0615 Formation \n 0630-0730 PT"; 
@@ -120,7 +120,7 @@ function ptDay(){
     } 
  
     else if(d1.getDate() == 21){
-        rep = "FOR WEDNESDAY \n What: \n \n Ruck March \n 6MI \n APFUs \n 45 lbs. \n \n Who: \n HHC Section 2 \n \n Where: \n RAC Pavilion \n \n When:  \n 0615 Formation \n 0630-0730 PT \n \n \n What: \n \n Ruck March \n 6MI \n APFU’s \n 45 lbs. \n \n Who: \n MSIII’s and HHC Section 1 \n \n Where: \n Gentilly Trail \n \n When:  \n 0515 Formation \n 0530-0730 PT";} 
+        rep = "FOR WEDNESDAY \n What: \n \n Ruck March \n 6MI \n APFUs \n 45 lbs. \n \n Who: \n HHC Section 2 \n \n Where: \n RAC Pavilion \n \n When:  \n 0515 Formation \n 0530-0730 PT \n \n \n What: \n \n Ruck March \n 6MI \n APFU’s \n 45 lbs. \n \n Who: \n MSIII’s and HHC Section 1 \n \n Where: \n Gentilly Trail \n \n When:  \n 0515 Formation \n 0530-0730 PT";} 
     else if(d1.getDate() == 22){
         rep = "FOR WEDNESDAY \n What: \n \n Ruck March \n 6MI \n APFU’s \n 45 lbs. \n \n Who: \n HHC Section 2 \n \n Where: \n RAC Pavilion \n \n When:  \n 0515 Formation \n 0530-0730 PT \n \n \n What: \n \n Ruck March \n 6MI \n APFU’s \n 45 lbs. \n \n Who: \n MSIII’s and HHC Section 1 \n \n Where: \n Gentilly Trail \n \n When:  \n 0515 Formation \n 0530-0730 PT";} 
     else if(d1.getDate() == 23){
@@ -138,7 +138,7 @@ function ptDay(){
         rep = "FOR MONDAY \n What: \n \n Preparation \n PD (5 reps) \n Activities \n CO Assessment \n Murph Squad competition \n \n Recovery \n RD (30 sec) \n \n \n Who: \n Primary Leader \n Lowder \n Secondary Leader \n Forbes \n \n Where: \n RAC PAVILION \n Or RAC Center \n \n When:  \n 00545 Formation \n 0600-0700 PT"; 
     }  
     else if(d1.getDate() == 28){
-        rep = "FOR WEDNESDAY \n What: \n \n Ruck March \n 6MI \n OCPs \n 35 lbs. \n \n Who: \n HHC Section 1 \n \n Where: \n RAC Pavilion \n \n When:  \n 0615 Formation \n 0630-0730 PT \n \n \n What: \n \n Ruck March \n 8 Miles \n OCPs \n 35 lbs. \n \n Who: \n MSIII’s & HHC Section 2 \n \n Where: \n Gentilly Trail \n \n When:  \n 0400 \n Formation \n 0410-0730 PT"; 
+        rep = "FOR WEDNESDAY \n What: \n \n Ruck March \n 6MI \n OCPs \n 35 lbs. \n \n Who: \n HHC Section 1 \n \n Where: \n RAC Pavilion \n \n When:  \n 0515 Formation \n 0530-0730 PT \n \n \n What: \n \n Ruck March \n 8 Miles \n OCPs \n 35 lbs. \n \n Who: \n MSIII’s & HHC Section 2 \n \n Where: \n Gentilly Trail \n \n When:  \n 0400 \n Formation \n 0410-0730 PT"; 
     } 
     else if(d1.getDate() == 29){
         rep = "FOR WEDNESDAY \n What: \n \n Ruck March \n 6MI \n OCPs \n 35 lbs. \n \n Who: \n HHC Section 1 \n \n Where: \n RAC Pavilion \n \n When:  \n 0515 Formation \n 0530-0730 PT \n \n \n What: \n \n Ruck March \n 8 Miles \n OCPs \n 35 lbs. \n \n Who: \n MSIII’s & HHC Section 2 \n \n Where: \n Gentilly Trail \n \n When:  \n 0400 \n Formation \n 0410-0730 PT"; 

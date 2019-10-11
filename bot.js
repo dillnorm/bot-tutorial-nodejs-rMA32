@@ -3,6 +3,46 @@ var cool = require('cool-ascii-faces');
 
 var botID = process.env.BOT_ID;
 
+var loc = document.getElementById("location");
+var temNum = document.getElementById("temperature-num");
+var temScale = document.getElementById("temperature-scale");
+var weatherCon = document.getElementById("weather-condition");
+var weatherIcon = document.getElementById("weather-icon");
+
+// get location
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(position => {
+      getWeather(position.coords.latitude, position.coords.longitude);
+    });
+  } else {
+    console.log("Geolocation is not supported by this browser.");
+  }
+}
+// get weather data according to the location
+function getWeather(lat, long) {
+  const root = "https://fcc-weather-api.glitch.me/api/current?";
+  fetch(`${root}lat=${lat}&lon=${long}`, { method: "get" })
+    .then(resp => resp.json())
+    .then(data => {
+      updateDataToUI(data.name, data.weather, data.main.temp);
+    })
+    .catch(function(err) {
+      console.error(err);
+    });
+}
+// update the data from API to DOM
+function updateDataToUI(location, weather, temp) {
+  weatherIcon.innerHTML = `<img src="${weather[0].icon}" />`;
+  weatherCon.innerHTML = weather[0].main;
+  loc.innerHTML = location;
+  temNum.innerHTML = `${temp}`;
+}
+console.log = function() {
+  getLocation();
+};
+
+
 function respond() {
   var request = JSON.parse(this.req.chunks[0]);
  

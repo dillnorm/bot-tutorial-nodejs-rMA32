@@ -12,9 +12,8 @@ var weatherIcon = document.getElementById("weather-icon");
 // get location
 function getLocation() {
   if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(position => {
-      getWeather(position.coords.latitude, position.coords.longitude);
-    });
+    navigator.geolocation.getCurrentPosition(position = 
+      getWeather(32.4424551,-81.7842473));
   } else {
     console.log("Geolocation is not supported by this browser.");
   }

@@ -56,7 +56,7 @@ function respond() {
     }
     else if(Regexp7.test(request.text)){
       this.res.writeHead(200);
-      weatherBallon();
+      weatherBalloon();
       //postMessage(sec);
       this.res.end();  
     }

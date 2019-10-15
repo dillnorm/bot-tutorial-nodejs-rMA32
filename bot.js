@@ -9,37 +9,21 @@ var temScale = document.getElementById("temperature-scale");
 var weatherCon = document.getElementById("weather-condition");
 var weatherIcon = document.getElementById("weather-icon");
 
-// get location
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(position = 
-      getWeather(32.4424551,-81.7842473));
-  } else {
-    console.log("Geolocation is not supported by this browser.");
-  }
+function weatherBalloon() {
+  var cityID = "Statesboro,GA";
+  var key = '{9403c5022e4b2d80a2bcc5739332adff}';
+  fetch('https://api.openweathermap.org/data/2.5/weather?id=' + cityID+ '&appid=' + key)  
+  .then(function(resp) { return resp.json() }) // Convert data to json
+  .then(function(data) {
+    console.log(data);
+  })
+  .catch(function() {
+    // catch any errors
+  });
 }
-// get weather data according to the location
-function getWeather(lat, long) {
-  const root = "https://fcc-weather-api.glitch.me/api/current?";
-  fetch(`${root}lat=${lat}&lon=${long}`, { method: "get" })
-    .then(resp => resp.json())
-    .then(data => {
-      updateDataToUI(data.name, data.weather, data.main.temp);
-    })
-    .catch(function(err) {
-      console.error(err);
-    });
-}
-// update the data from API to DOM
-function updateDataToUI(location, weather, temp) {
-  weatherIcon.innerHTML = `<img src="${weather[0].icon}" />`;
-  weatherCon.innerHTML = weather[0].main;
-  loc.innerHTML = location;
-  temNum.innerHTML = `${temp}`;
-}
-console.log = function() {
-  getLocation();
-};
+
+
+
 
 
 function respond() {
@@ -77,6 +61,12 @@ function respond() {
       var sec = "MS4 Ruck March Groups \n \n HHC Section 1: \n Knauss \n Pope \n Loftis \n Prescott, O. \n Camacho \n Kim\n Churchwell\n Daniels\n Killoran\n Forbes\n Clifford\n Davis, G.\n HHC Section 2: \n \n Norman\n King, K.\n Billman\n Jalek (Saunders-Rivers)\n Flanagan\n Leitner\n Ford\n Ray\n Word\n Adams, J.\n Bussell\n Wimberly\n Houser-Cross";
       this.res.writeHead(200);
       postMessage(sec);
+      this.res.end();  
+    }
+    else if(Regexp5.test(request.text)||Regexp6.test(request.text)){
+      this.res.writeHead(200);
+      weatherBallon();
+      //postMessage(sec);
       this.res.end();  
     }
     

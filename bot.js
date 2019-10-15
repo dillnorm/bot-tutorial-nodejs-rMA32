@@ -3,12 +3,6 @@ var cool = require('cool-ascii-faces');
 
 var botID = process.env.BOT_ID;
 
-var loc = document.getElementById("location");
-var temNum = document.getElementById("temperature-num");
-var temScale = document.getElementById("temperature-scale");
-var weatherCon = document.getElementById("weather-condition");
-var weatherIcon = document.getElementById("weather-icon");
-
 function weatherBalloon() {
   var cityID = "Statesboro,GA";
   var key = '{9403c5022e4b2d80a2bcc5739332adff}';

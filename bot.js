@@ -16,10 +16,6 @@ function weatherBalloon() {
   });
 }
 
-
-
-
-
 function respond() {
   var request = JSON.parse(this.req.chunks[0]);
  
@@ -29,6 +25,7 @@ function respond() {
   var Regexp4 = /Abbreviations/i;
   var Regexp5 = /section/i;
   var Regexp6 = /group/i;
+  var Regexp7 = /Weather/i;
   
   var botRegex = /^\/cool guy/;
   
@@ -57,13 +54,12 @@ function respond() {
       postMessage(sec);
       this.res.end();  
     }
-    else if(Regexp5.test(request.text)||Regexp6.test(request.text)){
+    else if(Regexp7.test(request.text)){
       this.res.writeHead(200);
       weatherBallon();
       //postMessage(sec);
       this.res.end();  
     }
-    
     else{
       var w = "What?";
       this.res.writeHead(200);
